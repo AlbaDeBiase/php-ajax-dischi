@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\MAMP\\htdocs\\boolean-php\\php-ajax-dischi\\src\\app.js'");
 
 /***/ }),
 
@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open 'C:\\MAMP\\htdocs\\boolean-php\\php-ajax-dischi\\src\\app.scss'\n    at C:\\MAMP\\htdocs\\boolean-php\\php-ajax-dischi\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\MAMP\\htdocs\\boolean-php\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\MAMP\\htdocs\\boolean-php\\php-ajax-dischi\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at C:\\MAMP\\htdocs\\boolean-php\\php-ajax-dischi\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
 
 /***/ }),
 
