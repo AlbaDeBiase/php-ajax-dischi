@@ -1,11 +1,10 @@
-$(document).ready(function){
+$(document).ready(function(){
 
 var source   = $("#card-template").html();
 var template = Handlebars.compile(source);
 
 
-$.ajax(
-{
+$.ajax({
   'url': 'dischi.php',
   'method': 'GET',
   'success': function(risposta){
@@ -24,5 +23,5 @@ $.ajax(
   'error':function(){
      alert('errore!');
    }
- }
-);
+});
+});
