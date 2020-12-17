@@ -96,7 +96,6 @@
 $(document).ready(function () {
   var source = $("#card-template").html();
   var template = Handlebars.compile(source);
-  console.log('sta per chiamare ajax');
   $.ajax({
     'url': 'dischi.php',
     'method': 'GET',
@@ -110,7 +109,7 @@ $(document).ready(function () {
           year: risposta[i].year
         };
         var html = template(context);
-        $('card-container').append(html);
+        $('.card-container').append(html);
       }
     },
     'error': function error() {
