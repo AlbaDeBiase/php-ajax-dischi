@@ -1,8 +1,14 @@
+
+
 $(document).ready(function(){
+
+
 
 var source   = $("#card-template").html();
 var template = Handlebars.compile(source);
 
+
+console.log('sta per chiamare ajax');
 
 $.ajax({
   'url': 'dischi.php',
