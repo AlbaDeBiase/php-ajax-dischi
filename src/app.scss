@@ -4,19 +4,24 @@ header{
     color:white;
 }
 
+main{
+        background-color: #2f2d2d;
+}
+
 .card img{
     width: 100%;
 
 }
 
 .container{
-    max-width: 1170;
     margin:auto;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-container {
     width: 100%;
-    background-color: #2f2d2d;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

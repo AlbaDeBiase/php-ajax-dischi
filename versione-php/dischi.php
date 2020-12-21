@@ -72,4 +72,48 @@ $dischi = [
     ]
 ];
 
+// creo un array di generi;
+$genres =[];
+// faccio un ciclo per recuperare il disco corrente
+foreach ($dischi as $disco) {
+    // recupero il genere del disco corrente
+    $genre = $disco['genre'];
+    if(!in_array($genre, $genres)){
+        // se non c'è lo pusho nell'array
+        $genres[]=$genre;
+    }
+}
+
+
+if ( !empty($_SERVER['HTTP_X_REQUESTED_WITH']) &&
+        strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' ) {
+
+    // verifico se esiste un parametro GET "genre"
+    if(!empty($_GET) && !empty($_GET['genre'])) {
+        // recupero il parametro GET "genre"
+        $genre = $_GET['genre'];
+
+        // creo un array dischi filtrati
+        $dischi_filtrati = [];
+
+        // filtro i dischi in base al genere selezionato
+        // ciclo tutti i dischi
+        foreach ($dischi as $disco) {
+            // per ogni disco, verifico se il genere corrisponde al genere selezionato
+            if($disco['genre'] == $genre) {
+                // se sì, lo pusho in un array
+                $dischi_filtrati[] = $disco;
+            }
+            // se no, lo scarto
+        }
+    } else {
+        // se non seleziono niente
+        $dischi_filtrati = $dischi;
+    }
+
+
+    header('Content-Type: application/json');
+    echo json_encode($dischi_filtrati);
+}
+
 ?>
