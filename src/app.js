@@ -3,6 +3,7 @@ $(document).ready(function(){
 var source   = $("#card-template").html();
 var template = Handlebars.compile(source);
 
+if($(".card-container").children().length == 0) {
 
 $.ajax({
   'url': 'dischi.php',
@@ -37,7 +38,7 @@ $.ajax({
              alert('errore!');
          }
      });
-
+}
 //funzione per intercettare il cambio di genere
      $('#genre-filter').change(function() {
 

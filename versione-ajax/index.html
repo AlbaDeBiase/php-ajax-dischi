@@ -14,11 +14,12 @@
         <main>
             <div class="container">
                     <select id="genre-filter" name="">
-                        <option value="tutti">tutti i generi</option>
+                        <option value="">tutti i generi</option>
                     </select>
-                </div>
-                <div class="card-container">
+                    <div class="card-container">
+                    </div>
             </div>
+
         </main>
         <script id="card-template" type="text/x-handlebars-template">
           <div class="card">
@@ -31,7 +32,6 @@
         <script id="select-template" type="text/x-handlebars-template">
             <option value="{{genre}}">{{genre}}</option>
         </script>
-    <script src="../dist/app.js" charset="utf-8"></script>
-
+        <script src="../dist/app.js" charset="utf-8"></script>
     </body>
 </html>

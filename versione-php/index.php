@@ -15,22 +15,14 @@
         <main>
             <div class="container">
                 <select id="genre-filter" name="">
-                    <option value="tutti">tutti i generi</option>
+                    <option value="">tutti i generi</option>
                     <?php foreach ($genres as $genre) {?>
                             <option value="<?php echo $genre ?>"><?php echo $genre ?></option>
 
                     <?php }  ?>
                 </select>
                 <div class="card-container">
-                    <?php foreach ($dischi as  $disco) {?>
-                    <div class="card">
-                        <img src= "<?php echo $disco['poster'] ?>"
-                         alt="$disco['title']">
-                        <p><?php echo $disco['title'] ?></p>
-                        <p><?php echo $disco['author'] ?></p>
-                        <p><?php echo $disco['year'] ?></p>
-                    </div>
-                        <?php } ?>
+                    
                 </div>
             </div>
         </main>
